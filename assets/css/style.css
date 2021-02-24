@@ -45,6 +45,10 @@ body {
     width: 80%;
 }
 
+.content p {
+    color: var(--secondary-color);
+}
+
 .content ul {
     list-style: none;
     display: flex;
@@ -55,6 +59,8 @@ body {
 
 .content ul li a {
     text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
 }
 
 .sections {
@@ -156,4 +162,5 @@ footer {
 
 footer h3 {
     font-size: 1rem;
+    color: var(--secondary-color);
 }
