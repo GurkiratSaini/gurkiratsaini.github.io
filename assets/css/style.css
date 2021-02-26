@@ -77,7 +77,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url(../images/hero-bg.jpeg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -102,32 +101,41 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
     list-style: none;
 }
 
 .header nav ul li a {
     font-size: 1.5rem;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .project {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
+    width: 50%;
 }
 
 .project img {
     height: 250px;
-    width: 540px;
+    width: 100%;
     border: 5px solid var(--secondary-color);
-    margin: 5px;
+    margin: 5px 5px;
+}
+
+.big-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
 }
 
 .big-img img {
-    height: 550px;
-    width: 1100px;
+    height: 650px;
+    width: 100%;
     border: 5px solid var(--secondary-color);
     margin: 5px;
 }
@@ -137,9 +145,10 @@ body {
     width: 200px;
     background-color: var(--secondary-color);
     position: absolute;
-    left: 5px;
+    left: 0;
     bottom: 25px;
     margin: 5px;
+    padding-left: 5px;
 }
 
 .project-info h3 {
