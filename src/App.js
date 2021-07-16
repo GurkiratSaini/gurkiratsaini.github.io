@@ -8,6 +8,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import NoMatch from './pages/NoMatch';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <Route exact path="/contact" component={Contact}></Route>
             <Route exact path="/resume" component={Resume}></Route>
 
-            {/* <Route component={NoMatch} /> */}
+            <Route component={NoMatch} />
           </Switch>
         </div>
         <Footer />
