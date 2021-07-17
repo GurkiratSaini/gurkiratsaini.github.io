@@ -911,11 +911,14 @@ nav a:hover {
   flex: 0 0 100%;
 }
 
-
 .about-picture {
   width: 70px;
   height: 100px;
   border-radius: 50%;
+}
+
+.project-img {
+  width: 100%;
 }
 
 /* col-sm */
