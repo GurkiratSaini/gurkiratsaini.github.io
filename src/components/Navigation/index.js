@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Navigation = () => {
+const Navigation = (props) => {
+
+    const {
+        tabs,
+        currentTab,
+        setCurrentTab
+    } = props.props;
+
+    useEffect(() => {
+        document.title = currentTab;
+    }, [currentTab]);
+
     return (
         <nav className="flex-row justify-space-between-lg justify-center align-center">
-            <a className="btn mx-1" href="/about">About Me</a>
-            <a className="btn mx-1" href="/portfolio">Portfolio</a>
-            <a className="btn mx-1" href="/contact">Contact</a>
-            <a className="btn mx-1" href="/resume">Resume</a>
-        </nav>
+            <button className="btn" onClick={() => { setCurrentTab("about") }} id="about">About Me</button>
+            <button className="btn" onClick={() => { setCurrentTab("portfolio") }} id="portfolio">Portfolio</button>
+            <button className="btn" onClick={() => { setCurrentTab("contact") }} id="contact">Contact</button>
+            <button className="btn" onClick={() => { setCurrentTab("resume") }} id="resume">Resume</button>
+        </nav >
     )
 }
 
