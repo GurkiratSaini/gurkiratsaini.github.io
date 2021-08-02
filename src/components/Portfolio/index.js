@@ -11,6 +11,13 @@ const Portfolio = () => {
             type: 'React'
         },
         {
+            name: 'Code Review',
+            image: './images/code-review.png',
+            github_link: 'https://github.com/phonix375/code-review',
+            deployed_link: 'https://fast-beach-15102.herokuapp.com/',
+            type: 'React'
+        },
+        {
             name: 'Pizza Hunt',
             image: './images/pizza-hunt.png',
             github_link: 'https://github.com/GurkiratSaini/pizza-hunt',
@@ -36,13 +43,6 @@ const Portfolio = () => {
             image: './images/just-tech-news.png',
             github_link: 'https://github.com/GurkiratSaini/just-tech-news',
             deployed_link: 'https://pacific-dawn-72541.herokuapp.com/',
-            type: 'React'
-        },
-        {
-            name: 'Zookeepr',
-            image: './images/zookeepr.png',
-            github_link: 'https://github.com/GurkiratSaini/zookeepr',
-            deployed_link: 'https://protected-harbor-87776.herokuapp.com/',
             type: 'React'
         }
     ];
